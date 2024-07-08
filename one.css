@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('https://thumbs.dreamstime.com/b/d-rendering-blue-violet-neon-symbol-calculator-icon-brick-wall-square-buttons-dark-background-wet-blurred-reflection-165558567.jpg') no-repeat center center fixed;  
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+}
+
+.container {
+    width: 90%; 
+    max-width: 400px;
+    height: 500px;
+    background-color: rgba(30, 30, 30, 0.85);
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 90%;
+    margin: 20px 5%; 
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #009ffd;
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 0 0 10px #009ffd, 0 0 20px #009ffd, 0 0 30px #009ffd;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input[type="button"] {
+    width: 70px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.button-clear {
+    background-color: #ff4c4c;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff4c4c, 0 0 20px #ff4c4c, 0 0 30px #ff4c4c;
+}
+
+.button-backspace {
+    background-color: #ff9f40;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff9f40, 0 0 20px #ff9f40, 0 0 30px #ff9f40;
+}
+
+.button-operator {
+    background-color: #4c9fff;
+    color: #ffffff;
+    box-shadow: 0 0 10px #4c9fff, 0 0 20px #4c9fff, 0 0 30px #4c9fff;
+}
+
+.button-number {
+    background-color: #4cff4c;
+    color: #ffffff;
+    box-shadow: 0 0 10px #4cff4c, 0 0 20px #4cff4c, 0 0 30px #4cff4c;
+}
+
+#equals {
+    width: 90%; 
+    max-width: 180px; 
+    height: 60px;
+    background-color: #fc4a1a;
+    color: #ffffff;
+    box-shadow: 0 0 10px #fc4a1a, 0 0 20px #fc4a1a, 0 0 30px #fc4a1a;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; 
+        max-width: none; 
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 95%; 
+        margin: 20px 2.5%; 
+    }
+
+    #equals {
+        width: 95%; 
+        max-width: none;
+    }
+}
